@@ -1,4 +1,4 @@
-**20 JavaScript Basic Problem-Solving Questions to Understand JavaScript Clearly
+#20 JavaScript Basic Problem-Solving Questions to Understand JavaScript Clearly
 
 1.Write a function to find the sum of two numbers.
 2.Create a function to check if a given number is even or odd.
