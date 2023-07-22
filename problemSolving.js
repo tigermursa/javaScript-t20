@@ -50,3 +50,15 @@ function stringReverser(string) {
 const myString = "Mursalin Hossain";
 const result4 = stringReverser(myString);
 console.log(result4);
+
+//|| problem number 5 :ICreate a function to check if a string is a palindrome.||
+
+function isPalindrome(str) {
+  const reversedStr = str.split("").reverse().join("");
+    return str === reversedStr;
+}
+
+const text = "dom";
+const result5 = isPalindrome(text);
+console.log(result5);
+
