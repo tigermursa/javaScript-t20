@@ -2,7 +2,7 @@
 
 1. Write a function to find the sum of two numbers.(solved)
 2. Create a function to check if a given number is even or odd.(solved)
-3. Write a function that returns the largest element in an array of numbers.
+3. Write a function that returns the largest element in an array of numbers.(solved)
 4. Implement a function to reverse a string.
 5. Create a function to check if a string is a palindrome (reads the same forwards and backwards).
 6. Write a function to calculate the factorial of a given number.

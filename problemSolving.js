@@ -20,3 +20,21 @@ function oddOrEven(number) {
 const testNumber = 14;
 const result2 = oddOrEven(testNumber);
 console.log(result2);
+
+//|| problem number 3 :Write a function that returns the largest element in an array of numbers ||
+
+function largestElement(array) {
+  let largest = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > largest) {
+      largest = array[i];
+    }
+  }
+  return largest;
+}
+
+const myArray = [5, 12, 50, 77, 6, 2];
+const result3 = largestElement(myArray);
+console.log(result3);
+
+//|| problem number 4 :Implement a function to reverse a string.||
