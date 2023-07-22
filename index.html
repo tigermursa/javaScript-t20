@@ -5,12 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/problemSolving.js" defer></script>
     <title>java script t20</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, yellow, white);
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #progress-bar-container {
+            width: 80%;
+            max-width: 300px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        #progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: green;
+        }
+    </style>
+    <script src="/problemSolving.js" defer></script>
 </head>
 
 <body>
-   
+    <h1>Welcome to t20 of JavaScript</h1>
+    <h2>Here I will solve 20 basic JavaScript problems</h2>
+    <h2>Solved <span id="solvedCount">5</span></h2>
+    <h3>Percentage: <span id="percentage"></span>%</h3>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <script>
+        // Function to calculate and display the percentage and progress bar
+        function updatePercentage() {
+            const solvedCount = parseInt(document.getElementById('solvedCount').innerText);
+            const totalProblems = 20;
+            const percentage = (solvedCount / totalProblems) * 100;
+
+            document.getElementById('percentage').innerText = percentage.toFixed(2);
+            document.getElementById('progress-bar').style.width = percentage + '%';
+        }
+
+        // Call the function initially to display the default value
+        updatePercentage();
+    </script>
 </body>
 
 </html>
