@@ -38,3 +38,15 @@ const result3 = largestElement(myArray);
 console.log(result3);
 
 //|| problem number 4 :Implement a function to reverse a string.||
+
+function stringReverser(string) {
+  let reversedStr = " ";
+  for (let i = string.length - 1; i >= 0; i--) {
+    reversedStr += string[i];
+  }
+  return reversedStr;
+}
+
+const myString = "Mursalin Hossain";
+const result4 = stringReverser(myString);
+console.log(result4);
